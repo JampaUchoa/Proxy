@@ -1,4 +1,3 @@
-
 class CepProxy
 
   @@cache = {
@@ -37,7 +36,7 @@ class Cep
   end
 
   def search(id)
-    sleep 0.1 #Simula um GET no sistema dos correios
+    sleep 0.1 # Simula um GET no sistema dos correios
     return {
       "Rua": "Jardim Talal",
       "Bairro": "Tal",
@@ -64,6 +63,7 @@ class User
     p "90, #{address[:"Rua"]}, #{address[:"Bairro"]}, #{address[:"Cidade"]}, #{address[:"Estado"]}."
 
   end
+  
 end
 
 f = User.new("Fulano", "52020000")
